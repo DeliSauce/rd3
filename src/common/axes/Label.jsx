@@ -15,6 +15,7 @@ module.exports = createReactClass({
     horizontalTransform: PropTypes.string,
     label: PropTypes.string.isRequired,
     width: PropTypes.number,
+    stroke: PropTypes.string,
     strokeWidth: PropTypes.number,
     textAnchor: PropTypes.string,
     verticalTransform: PropTypes.string,
@@ -23,7 +24,8 @@ module.exports = createReactClass({
   getDefaultProps() {
     return {
       horizontalTransform: 'rotate(270)',
-      strokeWidth: 0.01,
+      strokeWidth: 0.1,
+      stroke: 'pink',
       textAnchor: 'middle',
       verticalTransform: 'rotate(0)',
     };
@@ -60,6 +62,7 @@ module.exports = createReactClass({
 
     return (
       <text
+        stroke={props.stroke}
         strokeWidth={props.strokeWidth.toString()}
         textAnchor={props.textAnchor}
         transform={transform}

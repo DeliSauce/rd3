@@ -27,6 +27,8 @@ module.exports = {
     xAxisFormatter: PropTypes.func,
     xAxisLabel: PropTypes.string,
     xAxisLabelOffset: PropTypes.number,
+    xAxisLabelStroke: PropTypes.string,
+    xAxisLabelStrokeWidth: PropTypes.number,
     xAxisTickCount: PropTypes.number,
     xAxisTickInterval: PropTypes.object,
     xAxisTickValues: PropTypes.array,

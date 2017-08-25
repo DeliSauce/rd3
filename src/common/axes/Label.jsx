@@ -62,7 +62,7 @@ module.exports = createReactClass({
 
     return (
       <text
-        stroke={props.stroke}
+        style={{fill: props.textColor, stroke: props.textColor}}
         strokeWidth={props.strokeWidth.toString()}
         textAnchor={props.textAnchor}
         transform={transform}

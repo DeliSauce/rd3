@@ -24,8 +24,8 @@ module.exports = createReactClass({
   getDefaultProps() {
     return {
       horizontalTransform: 'rotate(270)',
-      strokeWidth: 0.1,
-      stroke: 'pink',
+      strokeWidth: 0.01,
+      stroke: 'green',
       textAnchor: 'middle',
       verticalTransform: 'rotate(0)',
     };

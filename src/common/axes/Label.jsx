@@ -15,7 +15,7 @@ module.exports = createReactClass({
     horizontalTransform: PropTypes.string,
     label: PropTypes.string.isRequired,
     width: PropTypes.number,
-    stroke: PropTypes.string,
+    textColor: PropTypes.string,
     strokeWidth: PropTypes.number,
     textAnchor: PropTypes.string,
     verticalTransform: PropTypes.string,
@@ -25,7 +25,7 @@ module.exports = createReactClass({
     return {
       horizontalTransform: 'rotate(270)',
       strokeWidth: 0.01,
-      stroke: 'green',
+      textColor: '#000',
       textAnchor: 'middle',
       verticalTransform: 'rotate(0)',
     };

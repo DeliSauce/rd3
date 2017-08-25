@@ -23,6 +23,8 @@ module.exports = createReactClass({
     horizontalChart: PropTypes.bool,
     yAxisClassName: PropTypes.string,
     yAxisLabel: PropTypes.string,
+    yAxisLabelColor: PropTypes.string,
+    yAxisLabelStrokeWidth: PropTypes.number,
     yAxisOffset: PropTypes.number,
     yAxisTickValues: PropTypes.array,
     xOrient: PropTypes.oneOf(['top', 'bottom']),
@@ -42,6 +44,8 @@ module.exports = createReactClass({
       tickStroke: '#000',
       yAxisClassName: 'rd3-y-axis',
       yAxisLabel: '',
+      xAxisLabelColor: '#000',
+      xAxisLabelStrokeWidth: 0.01,
       yAxisOffset: 0,
       xOrient: 'bottom',
       yOrient: 'left',
@@ -100,6 +104,8 @@ module.exports = createReactClass({
         <Label
           height={props.height}
           horizontalChart={props.horizontalChart}
+          textColor={props.yAxisLabelColor}
+          strokeWidth={props.yAxisLabelStrokeWidth}
           label={props.yAxisLabel}
           margins={props.margins}
           offset={props.yAxisLabelOffset}

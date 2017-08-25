@@ -27,7 +27,7 @@ module.exports = {
     xAxisFormatter: PropTypes.func,
     xAxisLabel: PropTypes.string,
     xAxisLabelOffset: PropTypes.number,
-    xAxisLabelStroke: PropTypes.string,
+    xAxisLabelColor: PropTypes.string,
     xAxisLabelStrokeWidth: PropTypes.number,
     xAxisTickCount: PropTypes.number,
     xAxisTickInterval: PropTypes.object,
@@ -41,6 +41,8 @@ module.exports = {
     yAxisFormatter: PropTypes.func,
     yAxisLabel: PropTypes.string,
     yAxisLabelOffset: PropTypes.number,
+    yAxisLabelColor: PropTypes.string,
+    yAxisLabelStrokeWidth: PropTypes.number,
     yAxisTickCount: PropTypes.number,
     yAxisTickInterval: PropTypes.object,
     yAxisTickValues: PropTypes.array,
@@ -65,6 +67,8 @@ module.exports = {
       // xAxisFormatter: no predefined value right now
       xAxisLabel: '',
       xAxisLabelOffset: 38,
+      xAxisLabelColor: '#000',
+      xAxisLabelStrokeWidth: 0.01,
       xAxisOffset: 0,
       // xAxisTickCount: no predefined value right now
       // xAxisTickInterval: no predefined value right now
@@ -76,6 +80,8 @@ module.exports = {
       // yAxisFormatter: no predefined value right now
       yAxisLabel: '',
       yAxisLabelOffset: 35,
+      yAxisLabelColor: '#000',
+      yAxisLabelStrokeWidth: 0.01,
       yAxisOffset: 0,
       // yAxisTickCount: no predefined value right now
       // yAxisTickInterval: no predefined value right now
